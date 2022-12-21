@@ -5,10 +5,10 @@ from adafruit_servokit import ServoKit #https://circuitpython.readthedocs.io/pro
 nbPCAServo=12 #Constants
 
 #Parameters
-MIN_IMP = 500
-MAX_IMP = 2500
+MIN_IMP = 000
+MAX_IMP = 2000
 MIN_ANG = 0
-MAX_ANG = 270
+MAX_ANG = 269
 
 #Objects
 pca = ServoKit(channels=16)
