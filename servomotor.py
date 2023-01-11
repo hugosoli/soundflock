@@ -2,7 +2,8 @@ import time
 from adafruit_servokit import ServoKit
 
 pca = ServoKit(channels=16)
-pca.servo[0].set_pulse_width_range(500 , 2000)
+pca.servo[0].set_pulse_width_range(500 , 2500)
+pca.servo[0].actuation_range = 270
 for i in range(10):
   pca.servo[0].angle = 0
   time.sleep(2)
